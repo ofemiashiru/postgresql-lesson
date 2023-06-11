@@ -15,6 +15,8 @@ connection = psycopg2.connect(database="chinook")
 cursor = connection.cursor()
 
 # Use queries to select items from the databases tables
+# Queries should be in the .execute() method
+# queries should be in single quotes and table names should be in double quotes
 cursor.execute('SELECT * FROM "Artist"')
 
 # Before we query the database we need to set up a way for the data to be
