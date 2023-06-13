@@ -1,6 +1,7 @@
 # import modules from sqlalchemy
 from sqlalchemy import (
-    create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData, select
+    create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData,
+    select
 )
 
 # executing the instructions from our localhost  "chinook" db
