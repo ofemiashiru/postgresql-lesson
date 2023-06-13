@@ -1,6 +1,6 @@
 # import modules from sqlalchemy
 from sqlalchemy import (
-    create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData
+    create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData, select
 )
 
 # executing the instructions from our localhost  "chinook" db
@@ -63,7 +63,15 @@ with db.connect() as connection:
     # select_query = artist_table.select().where(artist_table.c.Name == "Queen")
 
     # query 4 similar to query 3 however we are looking at an id
-    select_query = artist_table.select().where(artist_table.c.ArtistId == 51)
+    # select_query = artist_table.select().where(artist_table.c.ArtistId == 51)
+
+    # query 5 - looking within a different table
+    # select_query = album_table.select().where(album_table.c.ArtistId == 51)
+
+    # query 6 - select specific columns - import select module above and then
+    # use select(column, column)
+    select_query = select(track_table.c.Name, track_table.c.UnitPrice).where(
+        track_table.c.Composer == 'Queen')
 
     results = connection.execute(select_query)
 
