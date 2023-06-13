@@ -60,7 +60,7 @@ with db.connect() as connection:
     # ])
 
     # query 3 select values using the WHERE clause
-    # select_query = artist_table.select().where(artist_table.c.Name == "Queen")
+    # select_query =artist_table.select().where(artist_table.c.Name == "Queen")
 
     # query 4 similar to query 3 however we are looking at an id
     # select_query = artist_table.select().where(artist_table.c.ArtistId == 51)

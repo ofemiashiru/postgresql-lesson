@@ -23,7 +23,7 @@ cursor = connection.cursor()
 # QUERY 2 - Select specific column from a table
 # cursor.execute('SELECT "Name" FROM "Artist"')
 
-# QUERY 3 - Specific value - combination of single and double quotes do not work
+# QUERY 3 - Specific value -combination of single and double quotes do not work
 # We need to use a Python string placeholder, and then define the desired
 # string within a list.
 # cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Queen"])
