@@ -95,7 +95,7 @@ femi_ash = Programmer(
 # session.add(magaret_hamilton)
 # session.add(bill_gates)
 # session.add(tim_berners_lee)
-session.add(femi_ash)
+# session.add(femi_ash)
 
 # commit the new record(s) to the table - similar to the git commit command
 session.commit()
