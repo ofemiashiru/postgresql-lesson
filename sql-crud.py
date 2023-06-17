@@ -1,3 +1,5 @@
+#CRUD - Create and Read
+
 from sqlalchemy import (
     create_engine, Column, Integer, String
 )
