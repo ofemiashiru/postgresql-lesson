@@ -78,6 +78,14 @@ tim_berners_lee = Programmer(
     famous_for="World Wide Web"
 )
 
+femi_ash = Programmer(
+    first_name="Femi",
+    last_name="Ash",
+    gender="M",
+    nationality="Nigerian",
+    famous_for="Aspiring Full Stack Developer"
+)
+
 # add the newly created record - similar to git command adding to staging
 # remember to comment out the session.add() you have already done as it will
 # add a second record
@@ -87,6 +95,7 @@ tim_berners_lee = Programmer(
 # session.add(magaret_hamilton)
 # session.add(bill_gates)
 # session.add(tim_berners_lee)
+session.add(femi_ash)
 
 # commit the new record(s) to the table - similar to the git commit command
 session.commit()
