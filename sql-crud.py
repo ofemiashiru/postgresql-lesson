@@ -89,6 +89,7 @@ femi_ash = Programmer(
 # add the newly created record - similar to git command adding to staging
 # remember to comment out the session.add() you have already done as it will
 # add a second record
+
 # session.add(ada_lovelace)
 # session.add(alan_turing)
 # session.add(grace_hopper)
