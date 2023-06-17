@@ -85,7 +85,16 @@ base.metadata.create_all(db)
 # print(artist.Name)
 
 # Query 5 - bring back results from Album table where artist is Queen
-albums = session.query(Album).filter_by(ArtistId=51)
+# albums = session.query(Album).filter_by(ArtistId=51)
 
-for album in albums:
-    print(f"{album.Title:20} {album.ArtistId}")
+# for album in albums:
+#     print(f"{album.AlbumId:3} {album.Title:25}  {album.ArtistId}")
+
+# Query 6 - bring all the tracks with the composer of Queen
+tracks = session.query(Track).filter_by(Composer="Queen")
+
+for track in tracks:
+    print(
+        f"{track.TrackId:04} {track.Name:25} {track.Composer} \
+            {track.Milliseconds} {track.UnitPrice:10}"
+    )
