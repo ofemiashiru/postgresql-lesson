@@ -77,5 +77,15 @@ base.metadata.create_all(db)
 # Query 3 - select artist where the name is "Queen" - we use the filter_by()
 # method to reference the column and the .first() to make sure it only returns
 # the first it comes accross just in case there is more than one result
-artist = session.query(Artist).filter_by(Name="Queen").first()
-print(artist.ArtistId, artist.Name, sep=" | ")
+# artist = session.query(Artist).filter_by(Name="Queen").first()
+# print(artist.ArtistId, artist.Name, sep=" | ")
+
+# Query 4 - filter_by() the ArtistId
+# artist = session.query(Artist).filter_by(ArtistId=51).first()
+# print(artist.Name)
+
+# Query 5 - bring back results from Album table where artist is Queen
+albums = session.query(Album).filter_by(ArtistId=51)
+
+for album in albums:
+    print(f"{album.Title:20} {album.ArtistId}")
