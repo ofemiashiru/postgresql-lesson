@@ -36,7 +36,7 @@ programmer = session.query(Programmer).filter_by(id=12).first()
 # once we have target the specific record we can then programatically state
 # what we want to update
 programmer.famous_for = "Musician"
-programmer.first_name = "Joe"
+programmer.first_name = "James"
 
 # commit the new changes to the record to the table - similar to the git
 # commit command
