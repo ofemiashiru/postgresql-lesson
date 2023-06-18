@@ -90,13 +90,13 @@ femi_ash = Programmer(
 # remember to comment out the session.add() you have already done as it will
 # add a second record
 
-# session.add(ada_lovelace)
-# session.add(alan_turing)
-# session.add(grace_hopper)
-# session.add(magaret_hamilton)
-# session.add(bill_gates)
-# session.add(tim_berners_lee)
-# session.add(femi_ash)
+session.add(ada_lovelace)
+session.add(alan_turing)
+session.add(grace_hopper)
+session.add(magaret_hamilton)
+session.add(bill_gates)
+session.add(tim_berners_lee)
+session.add(femi_ash)
 
 # commit the new record(s) to the table - similar to the git commit command
 session.commit()
