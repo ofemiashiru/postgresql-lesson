@@ -30,11 +30,14 @@ base.metadata.create_all(db)
 # First lets find all the records we want to update
 records = session.query(Programmer)
 
+# Loop through all the records
+# Use if statement to target the gender in each record and make changes based
+# on the condition
 for record in records:
-    if record.gender == "Female":
-        record.gender = "Fe"
-    elif record.gender == "Male":
-        record.gender = "Ma"
+    if record.gender == "Fe":
+        record.gender = "F"
+    elif record.gender == "Ma":
+        record.gender = "M"
     else:
         print("Gender not defined")
 
