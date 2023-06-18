@@ -12,6 +12,7 @@ base = declarative_base()
 
 # Create a brand new table - using the class based model
 
+
 class Programmer(base):
     __tablename__ = "Programmer"
     id = Column(Integer, primary_key=True)  # this will autoincrement
